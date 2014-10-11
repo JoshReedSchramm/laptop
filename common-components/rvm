@@ -1,0 +1,8 @@
+if ! command -v rvm >/dev/null; then
+  fancy_echo "Installing RVM, to change Ruby versions ..."
+  curl -sSL https://get.rvm.io | bash -s stable
+
+  append_to_zshrc 'source $HOME/.rvm/scripts/rvm'
+else
+  fancy_echo "RVM already installed. Skipping ..."
+fi

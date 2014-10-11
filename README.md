@@ -1,6 +1,9 @@
 Laptop
 ======
 
+This is a fork of the excellent Laptop repo by
+[Thoughtbot](http://thoughtbot.com)
+
 Laptop is a script to set up a Mac OS X or Linux laptop for Rails development.
 
 Requirements
@@ -11,6 +14,9 @@ Requirements
 We support:
 
 * [10.9: Mavericks](https://itunes.apple.com/us/app/os-x-mavericks/id675248567)
+
+* [10.10: Yosemite](http://www.apple.com/osx/preview/?cid=wwa-us-kwg-mac-com)
+  *Currently Testing*
 
 Older versions may work but aren't regularly tested. Bug reports for older
 versions are welcome.
@@ -31,13 +37,13 @@ Install
 
 Read, then run the script:
 
-    bash <(curl -s https://raw.githubusercontent.com/thoughtbot/laptop/master/mac) 2>&1 | tee ~/laptop.log
+    bash <(curl -s https://raw.githubusercontent.com/joshreedschramm/laptop/master/mac) 2>&1 | tee ~/laptop.log
 
 ### Linux
 
 Read, then run the script:
 
-    bash <(wget -qO- https://raw.githubusercontent.com/thoughtbot/laptop/master/linux) 2>&1 | tee ~/laptop.log
+    bash <(wget -qO- https://raw.githubusercontent.com/joshreedschramm/laptop/master/linux) 2>&1 | tee ~/laptop.log
 
 Debugging
 ---------
@@ -65,7 +71,7 @@ What it sets up
 * [Postgres] for storing relational data
 * [Qt] for headless JavaScript testing via Capybara Webkit
 * [Rails] gem for writing web applications
-* [Rbenv] for managing versions of Ruby
+* [rvm] for managing versions of Ruby
 * [Redis] for storing key-value data
 * [Ruby Build] for installing Rubies
 * [Ruby] stable for writing general-purpose code
@@ -89,7 +95,7 @@ What it sets up
 [Postgres]: http://www.postgresql.org/
 [Qt]: http://qt-project.org/
 [Rails]: http://rubyonrails.org/
-[Rbenv]: https://github.com/sstephenson/rbenv
+[rvm]: http://rvm.io
 [Redis]: http://redis.io/
 [Ruby Build]: https://github.com/sstephenson/ruby-build
 [Ruby]: https://www.ruby-lang.org/en/

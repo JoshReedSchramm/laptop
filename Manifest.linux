@@ -8,8 +8,8 @@ linux-components/debian-package-update
 linux-components/debian-derivative-packages
 common-components/zsh
 linux-components/silver-searcher
-common-components/rbenv
-common-components/ruby-environment
+common-components/rvm
+common-components/ruby-environment-rvm
 linux-components/bundler
 common-components/default-gems
 linux-components/heroku
